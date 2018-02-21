@@ -87,7 +87,7 @@ export default class App extends Component {
                         </ListGroup>
                     </div>
                     <Slider step={10} min={10} max={100} disabled={this.state.inProgress}
-                        onAfterChange={
+                        onChange={
                             value => this.setState({baseBlind: value, blind: value})
                         } 
                     />
